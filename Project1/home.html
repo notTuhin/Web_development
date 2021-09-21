@@ -1,0 +1,228 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <nav>
+            
+            <i id="profile-icon" class='fas fa-user-alt' onclick="document.getElementById('profile').style.display='block'"></i>
+            
+         <!--   <li><button class='loginbtn' onclick="document.getElementById('profile').style.display='block'" style="width:auto;">Login</button></li> -->
+
+
+           <label class="logo">Design</label>
+
+           <ul>
+               <li><a class="active" href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</a></li>               
+           </ul>
+
+           <div id="icon">
+               <i class="fas fa-bars"></i>
+           </div>
+
+        </nav>
+    </div>
+<!-- _______________________________Login_________________________________________________-->
+    <div id='login-form'class='login-page'>
+        <div class="form-box">
+
+            <!----------Toggle-button------>
+            <div class='button-box'>
+                <div id='btn'></div>
+                <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+            </div>
+
+            <!-------------login----------->
+
+            <form id='login' class='input-group-login'>          
+                <input type='email'class='input-field'placeholder='Email Id' required >
+                <input type='password'class='input-field'placeholder='Enter Password' required>
+                <input type='checkbox'class='check-box'><span class="check-box-text">Remember Password</span>
+                <button type='submit'class='submit-btn'>Login</button>
+            </form>
+
+            <!------------icon--------->
+            <div class="icons">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon> </a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon> </a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon> </a>
+                <a href="#"><ion-icon name="logo-google"></ion-icon> </a>
+                <a href="#"><ion-icon name="logo-skype"></ion-icon> </a>
+            </div>
+
+            <!-----------Register--------->
+            <form id='register' class='input-group-register'>
+                <input type='text'class='input-field'placeholder='First Name' required>
+                <input type='text'class='input-field'placeholder='Last Name ' required>
+                <input type='email'class='input-field'placeholder='Email Id' required>
+                <input type='password'class='input-field'placeholder='Enter Password' required>
+                <input type='password'class='input-field'placeholder='Confirm Password'  required>
+                <input type='checkbox'class='check-box'><span class="check-box-text">I agree to the terms and conditions</span>
+                <button type='submit'class='submit-btn'>Register</button>
+            </form>
+
+        </div>
+    </div>
+    <!--________________________________________________________________________________________-->
+
+    
+<div>
+    <div id="profile" class="card">
+        <div class="profile-box">
+
+        <div id="background" class="card-background">
+            <img src="bg.jpg" class="card-image">
+        </div>
+        <div id="info" class="card-info">
+            <h1>Shiva Shivam</h1>
+            <br>
+            <p>Jeena jeena jeena re uda gulal mai teri chunariya laharai</p>
+        </div>
+        <div id="icon" class="card-social-icons">
+
+        
+        </div>
+        </div>
+    </div>
+</div>
+<!--______________________________________________________________________________________________-->
+
+    <!---------------card_1------------------>
+<div class="main">
+    <div class="cards">
+        <div class="image"><img src="bg.jpg"></div>
+        <div class="title"><h1>Title Name</h1></div>
+        <div class="des"><p>Write your title description here.....</p>
+        <button>Read More...</button>
+        </div>
+        
+    </div>
+    <!---------------card_2------------------->
+
+    <div class="cards">
+        <div class="image"><img src="bg.jpg"></div>
+        <div class="title"><h1>Title Name</h1></div>
+        <div class="des"><p>Write your title description here.....</p>
+        <button>Read More...</button>
+        </div>
+        
+    </div>
+
+    <!---------------card_3------------------->
+
+
+
+    <div class="cards">
+        <div class="image"><img src="bg.jpg"></div>
+        <div class="title"><h1>Title Name</h1></div>
+        <div class="des"><p>Write your title description here.....</p>
+        <button>Read More...</button>
+        </div>
+        
+    </div>
+    <!---------------card_4------------------->
+
+
+
+    <div class="cards">
+        <div class="image"><img src="bg.jpg"></div>
+        <div class="title"><h1>Title Name</h1></div>
+        <div class="des"><p>Write your title description here.....</p>
+        <button>Read More...</button>
+        </div>
+        
+    </div>
+
+    <!---------------card_5------------------->
+
+    <div class="cards">
+        <div class="image"><img src="bg.jpg"></div>
+        <div class="title"><h1>Title Name</h1></div>
+        <div class="des"><p>Write your title description here.....</p>
+        <button>Read More...</button>
+        </div>
+        
+    </div>
+
+
+</div>
+
+
+<!--____________________________________________________________________________________________-->
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+
+
+    </script>
+
+<!------------------------------------------------------>
+
+<script>
+    var modal = document.getElementById('profile');
+    window.onclick = function(event) 
+    {
+        if (event.target == modal) 
+        {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+
+    <section>
+  
+    </section> 
+    
+</body>
+</html>

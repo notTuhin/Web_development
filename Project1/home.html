@@ -18,13 +18,36 @@
 
         });
     </script>
+	<script>
+		function profile(){
+            var x = document.getElementById("login-form");
+            var y = document.getElementById('main');
+
+                x.style.display = "block";
+                y.style.display = "none";
+
+            
+		
+		}
+         function profile2(){
+            var x = document.getElementById("login-form");
+            var y = document.getElementById('main');
+
+            x.style.display = "none";
+            y.style.display= "grid";
+
+
+        }
+
+
+	</script>
 
 </head>
 <body>
     <div>
         <nav>
             
-            <i id="profile-icon" class='fas fa-user-alt' onclick="document.getElementById('profile').style.display='block'"></i>
+            <i id="profile-icon" class='fas fa-user-alt' onclick="profile();"></i>
             
          <!--   <li><button class='loginbtn' onclick="document.getElementById('profile').style.display='block'" style="width:auto;">Login</button></li> -->
 
@@ -32,11 +55,11 @@
            <label class="logo">Design</label>
 
            <ul>
-               <li><a class="active" href="#">Home</a></li>
+               <li><a class="active" href="#" onclick="profile2();">Home</a></li>
                <li><a href="#">About</a></li>
                <li><a href="#">Services</a></li>
                <li><a href="#">Contact</a></li>
-               <li><a class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</a></li>               
+               <li><a class='loginbtn' onclick="profile();" style="width:auto;">Login</a></li>               
            </ul>
 
            <div id="icon">
@@ -112,7 +135,7 @@
 <!--______________________________________________________________________________________________-->
 
     <!---------------card_1------------------>
-<div class="main">
+<div class="main" id="main">
     <div class="cards">
         <div class="image"><img src="bg.jpg"></div>
         <div class="title"><h1>Title Name</h1></div>
